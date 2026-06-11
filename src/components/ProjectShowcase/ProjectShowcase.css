@@ -1,0 +1,28 @@
+.project-showcase {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-showcase-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.project-showcase-title {
+  margin: 0;
+}
+
+.project-showcase-description {
+  margin: 0;
+  color: var(--text);
+}
+
+.project-showcase-content {
+  margin: 0;
+}

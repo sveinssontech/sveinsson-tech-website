@@ -1,16 +1,18 @@
-import PageBody from "../PageBody/PageBody";
+import HomeBody from '../pages/HomeBody'
+import ProjectsBody from '../pages/ProjectsBody'
+import ServicesBody from '../pages/ServicesBody'
 
 export const pageContent = {
   home: {
-    title: "Home",
-    body: <PageBody></PageBody>,
+    title: 'Home',
+    body: <HomeBody />,
   },
   projects: {
-    title: "Projects",
-    body: <PageBody>Projects</PageBody>,
+    title: 'Projects',
+    body: <ProjectsBody />,
   },
   services: {
-    title: "Services",
-    body: <PageBody>Services</PageBody>,
+    title: 'Services',
+    body: <ServicesBody />,
   },
-};
+}
