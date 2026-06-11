@@ -1,0 +1,31 @@
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link {
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-size: 15px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--text-h);
+  background: var(--accent-bg);
+}
+
+.nav-link.is-active {
+  color: var(--accent);
+  background: var(--accent-bg);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
