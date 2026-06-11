@@ -1,8 +1,7 @@
-export const siteName = 'Placeholder Name'
+export const siteName = 'Sveinsson Tech'
 
 export const navItems = [
-  { id: 'home', label: 'Placeholder 1' },
-  { id: 'about', label: 'Placeholder 2' },
-  { id: 'services', label: 'Placeholder 3' },
-  { id: 'contact', label: 'Placeholder 4' },
+  { id: 'home', label: 'Home' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'services', label: 'Services' },
 ]

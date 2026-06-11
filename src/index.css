@@ -13,22 +13,28 @@
 
 [data-theme='light'] {
   --text: #6b6375;
-  --text-h: #08060d;
+  --text-h: #000000;
   --bg: #ffffff;
   --surface: #f7f6f9;
   --border: #e5e4e7;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent: #000000;
+  --accent-bg: rgba(170, 59, 255, 1);
+  --hover-bg: rgb(186, 174, 228);
+  --btn-bg: #dfdfdf;
+  --btn-text: #000000;
 }
 
 [data-theme='dark'] {
   --text: #9ca3af;
-  --text-h: #f3f4f6;
+  --text-h: #ffff;
   --bg: #14121a;
   --surface: #1f1d29;
   --border: #2e303a;
-  --accent: #c084fc;
-  --accent-bg: rgba(192, 132, 252, 0.15);
+  --accent: #000000;
+  --accent-bg: rgba(192, 132, 252, 1);
+  --hover-bg: rgb(49, 33, 136);
+  --btn-bg: #000000;
+  --btn-text: #ffffff;
 }
 
 body {

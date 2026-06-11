@@ -17,7 +17,9 @@ export default function MainContent({ activeId }) {
           transition={{ duration: 0.25, ease: 'easeInOut' }}
         >
           <h1>{page.title}</h1>
-          <p>{page.body}</p>
+          <div className='main-content-body'>
+            {page.body}
+          </div>
         </motion.section>
       </AnimatePresence>
     </main>
