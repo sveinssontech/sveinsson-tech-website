@@ -20,6 +20,12 @@ export default function HomeBody() {
         exiting tech, making games and playing games as well. Hope those that
         find their way here will enjoy whatever I have been working on!
       </p>
+      <h2>
+        Projects I have been a part of
+      </h2>
+      <p>
+        Waltz of the Wizard | Capeesh Language Learning | Optoscale Customer Portal
+      </p>
     </PageBody>
   );
 }
