@@ -1,12 +1,12 @@
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
-import { useTheme } from '../../theme/themeStore'
-import './Scene3D.css'
-import { useEffect } from 'react'
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { useTheme } from "../../theme/themeStore";
+import "./Scene3D.css";
+import { useEffect, useState } from "react";
 
-const DEFAULT_CAMERA = { position: [9, 8, 9], fov: 45 }
-const BACKGROUND_COLOR_DARK = '#14121a'
-const BACKGROUND_COLOR_LIGHT = '#c0bec7'
+const DEFAULT_CAMERA = { position: [9, 8, 9], fov: 45 };
+const BACKGROUND_COLOR_DARK = "#14121a";
+const BACKGROUND_COLOR_LIGHT = "#ffffff";
 
 export default function Scene3D({
   children,
@@ -15,14 +15,16 @@ export default function Scene3D({
 }) {
   const theme = useTheme();
 
-  const GetSceneColor = () => {
-    return theme === 'dark' ? BACKGROUND_COLOR : BACKGROUND_COLOR_LIGHT;
-  }
+  const [sceneColor, useSceneColor] = useState("#14121a");
 
-  let sceneColor = '#14121a';
+  const GetSceneColor = () => {
+    return theme.theme === "dark"
+      ? BACKGROUND_COLOR_DARK
+      : BACKGROUND_COLOR_LIGHT;
+  };
 
   useEffect(() => {
-    sceneColor = GetSceneColor();
+    useSceneColor(GetSceneColor());
   }, [theme]);
 
   return (
@@ -37,8 +39,10 @@ export default function Scene3D({
           shadow-mapSize={[1024, 1024]}
         />
         {children}
-        {showControls && <OrbitControls enablePan={false} minDistance={6} maxDistance={20} />}
+        {showControls && (
+          <OrbitControls enablePan={false} minDistance={6} maxDistance={20} />
+        )}
       </Canvas>
     </div>
-  )
+  );
 }
