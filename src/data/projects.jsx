@@ -4,7 +4,7 @@ export const projects = [
     title: "Party Game Framwork",
     description:
       "A local party game maker, using a windows machine to host, and phones to play.",
-    content: <p>Import Itch link</p>,
+    content: <p>In development</p>,
   },
   {
     id: "project-two",
