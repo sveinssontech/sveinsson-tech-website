@@ -1,5 +1,8 @@
 import PageBody from '../PageBody/PageBody'
 
+const emailUser = "sveinssontech"
+const emailDomain = "pm.me"
+
 export default function ServicesBody() {
   return (
     <PageBody>
@@ -14,7 +17,9 @@ export default function ServicesBody() {
         If you have any requests or just need a freelancer, contact me!
       </p>
       <p>
-        sveinssontech@pm.me
+        <a href={`mailto:${emailUser}@${emailDomain}`}>
+          {emailUser}@{emailDomain}
+        </a>
       </p>
     </PageBody>
   );
