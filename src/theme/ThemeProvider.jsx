@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 import {
   ThemeContext,
   STORAGE_KEY,
@@ -8,7 +8,7 @@ import {
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(readInitialTheme)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
     localStorage.setItem(STORAGE_KEY, theme)
   }, [theme])
