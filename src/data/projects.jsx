@@ -1,4 +1,4 @@
-import CubeTuberDownload from "../projects/CubeTuberDownload";
+import LinkButton from "../projects/LinkButton";
 
 export const projects = [
   {
@@ -6,7 +6,7 @@ export const projects = [
     title: "Cube Tuber",
     description:
       "A VTuber like project, made to accept a static FBX model and do basic animations.",
-    content: <CubeTuberDownload/>,
+    content: <LinkButton link={"https://github.com/sveinssontech/cube-tuber-download/releases/tag/0.1.0"} buttonText={"Download"}/>,
   },
   {
     id: "project-2",

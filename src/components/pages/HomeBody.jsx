@@ -2,6 +2,7 @@ import PageBody from "../PageBody/PageBody";
 import LazyScene3D from "../Scene3D/LazyScene3D";
 import FacePicture from "../../images/Face.jpg";
 import * as THREE from "three";
+import LinkButton from "../../projects/LinkButton";
 
 export default function HomeBody() {
   const texture = new THREE.TextureLoader().load(FacePicture);
@@ -27,6 +28,8 @@ export default function HomeBody() {
         <p>Optoscale Customer portal</p>
         <p>Virtur Driving Simulator</p>
       </div>
+      <h2>Patreon Link</h2>
+      <LinkButton link={"https://www.patreon.com/stmagni"} buttonText={"Patreon"}/>
     </PageBody>
   );
 }
