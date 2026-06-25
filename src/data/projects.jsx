@@ -1,9 +1,4 @@
-import BouncyButton from "../buttons/BouncyButton";
-
-const handleOpenTab = () => {
-  window.open('https://github.com/sveinssontech/CubeTuber/releases/tag/0.1.0', '_blank', 'noopener,noreferrer');
-};
-
+import CubeTuberDownload from "../projects/CubeTuberDownload";
 
 export const projects = [
   {
@@ -11,14 +6,7 @@ export const projects = [
     title: "Cube Tuber",
     description:
       "A VTuber like project, made to accept a static FBX model and do basic animations.",
-    content: 
-    (
-      <div>
-        <BouncyButton onClick={handleOpenTab}>
-          Download
-        </BouncyButton>
-      </div>
-    ),
+    content: <CubeTuberDownload/>,
   },
   {
     id: "project-2",
