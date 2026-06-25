@@ -1,0 +1,42 @@
+.bouncy-button-slot {
+  position: relative;
+  display: inline-flex;
+  border-radius: 8px;
+  padding-bottom: 4px;
+}
+
+.bouncy-button-slot::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 6px;
+  bottom: 0;
+  background-color: var(--accent-bg);
+  border-radius: 0 0 8px 8px;
+  z-index: -1;
+}
+
+.bouncy-button-back {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 6px;
+  bottom: 0;
+  border-radius: 0 0 8px 8px;
+  background: var(--accent-bg);
+  pointer-events: none;
+}
+
+.bouncy-button {
+  position: relative;
+  border: none;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-size: 15px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
